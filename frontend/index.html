@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindCafe — Little cafés, lovely discoveries</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="announcement">
+        a little corner for your next coffee date ☕
+    </div>
+
+    <header class="navbar">
+        <a href="#" class="logo">find<span>cafe.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#explore">Explore cafés</a>
+            <a href="#about">Our little story</a>
+        </nav>
+
+        <a href="#explore" class="nav-button">Find your spot ↗</a>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-decoration flower-one">✿</div>
+            <div class="hero-decoration flower-two">❀</div>
+            <div class="hero-decoration star-one">✳</div>
+
+            <div class="hero-content">
+                <p class="eyebrow">A LITTLE CAFÉ DISCOVERY JOURNAL</p>
+
+                <h1>
+                    Somewhere between<br>
+                    <span>coffee & daydreams.</span>
+                </h1>
+
+                <p class="hero-description">
+                    For slow mornings, little conversations
+                    and cafés that feel like a warm hug.
+                </p>
+
+                <a href="#explore" class="hero-button">
+                    Find your happy place <span>↗</span>
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1100"
+                    alt="Warm and welcoming café interior"
+                >
+
+                <div class="image-note">
+                    <span>your next favourite corner</span>
+                    <span class="note-flower">✿</span>
+                </div>
+            </div>
+
+            <div class="hero-bottom-note">
+                <span>made for the café wanderers</span>
+                <span>✳ Bengaluru edition</span>
+            </div>
+
+        </section>
+
+
+        <!-- EXPLORE SECTION -->
+        <section class="explore-section" id="explore">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A FEW PLACES TO FALL IN LOVE WITH</p>
+                    <h2>Let's find your <span>little spot.</span></h2>
+                </div>
+
+                <p class="handwritten">good coffee, good mood ♡</p>
+            </div>
+
+            <div class="search-container">
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Try a café name, neighbourhood or coffee..."
+                >
+
+                <button id="searchButton">Find cafés ↗</button>
+            </div>
+
+            <div class="filter-area">
+                <span class="filter-label">A little mood:</span>
+
+                <button class="filter-chip active" data-filter="All">
+                    Everything
+                </button>
+
+                <button class="filter-chip" data-filter="Cozy">
+                    Cozy corners
+                </button>
+
+                <button class="filter-chip" data-filter="Coffee">
+                    Coffee dates
+                </button>
+
+                <button class="filter-chip" data-filter="Brunch">
+                    Brunch spots
+                </button>
+
+                <button class="filter-chip" data-filter="Quiet">
+                    Quiet places
+                </button>
+            </div>
+
+            <div class="results-heading">
+                <h3>Little discoveries <span>✿</span></h3>
+                <p id="resultsCount">Finding your spots...</p>
+            </div>
+
+            <div id="cafeContainer" class="cafe-grid">
+                <!-- Café cards will be added using JavaScript -->
+            </div>
+
+            <div id="emptyMessage" class="empty-message hidden">
+                <span>☕</span>
+                <h3>Hmm, no little spots found!</h3>
+                <p>Try another search. Your perfect café is out there.</p>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+            <div class="about-flower">✿</div>
+
+            <p class="eyebrow">A NOTE FROM US</p>
+
+            <h2>
+                Life is too short<br>
+                for <span>ordinary coffee dates.</span>
+            </h2>
+
+            <p>
+                FindCafe is your little guide to discovering
+                beautiful cafés, hidden corners and places
+                worth spending a little more time in.
+            </p>
+
+            <div class="about-signature">see you over coffee ♡</div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <a href="#home" class="logo">find<span>cafe.</span></a>
+        <p>Made with a little love and a lot of coffee ☕</p>
+        <p>© 2026 FindCafe</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
